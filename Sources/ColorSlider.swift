@@ -200,7 +200,7 @@ extension ColorSlider {
 	///
 	/// The `x` and `y` values of `point` are constrained to the bounds of the slider.
 	/// - parameter point: The desired point at which to center the `previewView`.
-	internal func centerPreview(at point: CGPoint) {
+	open func centerPreview(at point: CGPoint) {
 		switch orientation {
 		case .horizontal:
 			let boundedTouchX = (0..<bounds.width).clamp(point.x)
